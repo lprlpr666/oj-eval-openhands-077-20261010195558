@@ -53,7 +53,7 @@ public:
     }
 
     // true if both objects share the same underlying storage pointer
-    bool IsSame(const CrossArray &o) const {
+    bool IsSame(const CrossArray &o) {
         return data_ == o.data_;
     }
 
@@ -100,6 +100,11 @@ public:
     }
 
     // Return pointer to the beginning of line i (or nullptr).
+    // Return pointer to the beginning of line i (or nullptr).
+    const int * AtArray(int i) {
+        return data_[i];
+    }
+    // Const overload for const objects
     const int * AtArray(int i) const {
         return data_[i];
     }
