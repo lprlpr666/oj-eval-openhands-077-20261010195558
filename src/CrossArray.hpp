@@ -100,7 +100,6 @@ public:
     }
 
     // Return pointer to the beginning of line i (or nullptr).
-    // Return pointer to the beginning of line i (or nullptr).
     const int * AtArray(int i) {
         return data_[i];
     }
